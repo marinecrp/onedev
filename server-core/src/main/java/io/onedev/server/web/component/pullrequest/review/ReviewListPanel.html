@@ -1,0 +1,14 @@
+<wicket:panel>
+	<ul class="reviews list-unstyled mb-0">
+		<li wicket:id="reviews" class="d-flex flex-nowrap align-items-center">
+			<span wicket:id="status" class="status mr-2"></span>
+			<a wicket:id="user" class="user mr-3"></a> 
+			<a wicket:id="delete" class="delete btn btn-xs btn-icon btn-light btn-hover-danger flex-shrink-0" title="Remove this reviewer"><wicket:svg href="trash" class="icon"></wicket:svg></a>
+		</li>
+		<wicket:enclosure child="addReviewer">
+		<li class="add-reviewer">
+			<input wicket:id="addReviewer" type="hidden" class="form-control">
+		</li>
+		</wicket:enclosure>
+	</ul>
+</wicket:panel>

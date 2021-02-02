@@ -1,0 +1,179 @@
+.text-diff {
+	table-layout: fixed;
+	width: 100%;
+	border-collapse: separate;	
+}
+.text-diff>caption {
+	caption-side: top;
+}
+.text-diff>caption>div {
+	border-radius: 0.42rem 0.42rem 0 0;
+}
+.text-diff>tbody {
+	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	font-size: 0.9rem;
+}
+
+/* 
+ * have to use relative here as otherwise the last table row will have problem
+ * focusing on expander link. This relates to negative margin top 
+ * specified for change class in revision diff panel
+ */
+.text-diff>tbody>tr>td {
+	position: relative;
+}
+.text-diff>tbody>tr>td.number {
+	padding: 0 0.3rem;
+	border-left: 1px solid var(--light-gray);
+	text-align: right;
+	color: var(--gray);
+}
+.text-diff>tbody>tr:not(.expanded)+tr.expanded>td, .text-diff>tbody>tr.expanded+tr:not(.expanded)>td {
+	border-top: 1px solid var(--light-gray);
+}
+.text-diff>tbody>tr>td:last-child {
+	border-right: 1px solid var(--light-gray);
+}
+.text-diff>tbody>tr:last-child>td:first-child {
+	border-radius: 0 0 0 0.42rem;
+}
+.text-diff>tbody>tr:last-child>td:last-child {
+	border-radius: 0 0 0.42rem 0;
+}
+.text-diff>tbody>tr>td.operation {
+	border-left: 1px solid var(--light-gray);
+}
+.text-diff>tbody>tr>td:FIRST-CHILD {
+	border-left: 1px solid var(--light-gray);
+}
+.text-diff>tbody>tr:LAST-CHILD>td {
+	border-bottom: 1px solid var(--light-gray);
+}
+.text-diff>tbody>tr.expanded>td {
+	background: #F6F9FC;
+}
+.text-diff>tbody>tr.expander>td.skipped {
+	padding: 0.5rem 1.2rem;
+	border-left: 1px solid var(--light-gray);
+	background: #F0F8FF;
+	color: var(--gray);
+}
+.text-diff>tbody>tr.expander>td.expander {
+	text-align: center;
+	overflow: hidden;
+	vertical-align: middle;
+}
+.text-diff>tbody>tr.expander>td.expander a {
+	display: block;
+	background: #F0F8FF;
+	color: var(--gray);
+	padding: 2rem 0;
+	margin: -2rem -1px;
+}
+
+.text-diff>tbody>tr.expander>td.expander>a:hover, 
+.text-diff>tbody>tr.expander>td.expander>a:focus {
+	background: var(--primary);
+	color: white;
+}
+.text-diff>tbody>tr>td.old.number {
+	background: #ffdddd;
+	border-left: 1px solid #f1c0c0;
+}
+.text-diff>tbody>tr>td.old.content {
+	background: #ffecec;
+}
+.text-diff>tbody>tr>td.old.operation {
+	border-left: 1px solid #f1c0c0;
+	background: #ffecec;
+}
+.text-diff>tbody>tr>td.old .delete {
+	background-color: #F8B8B8;
+	text-decoration: line-through;
+}
+.text-diff>tbody>tr>td.new.number {
+	background: #dbffdb;
+	border-left: 1px solid #c1e9c1;
+}
+.text-diff>tbody>tr>td.new.content {
+	background: #eaffea;
+}
+.text-diff>tbody>tr>td.new.operation {
+	border-left: 1px solid #c1e9c1;
+	background: #eaffea;
+}
+.text-diff>tbody>tr>td.new .insert {
+	background-color: #94F094;
+}
+.text-diff>tbody>tr>td.old.new.number {
+	background: #FAF3D0;
+	border-left: 1px solid #EBD049;
+}
+.text-diff>tbody>tr>td.old.new.content {
+	background: #FCF8E4;
+}
+.text-diff>tbody>tr>td.old.new.operation {
+	border-left: 1px solid #EBD049;
+	background: #FCF8E4;
+}
+.text-diff>tbody>tr>td.content {
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+.text-diff>tbody>tr>td.operation {
+	font-weight: bold;
+	padding: 0 0.3rem 0 0.3rem;
+}
+.text-diff>tbody>tr:hover:not(.expander)>td {
+	background: var(--light-primary) !important;
+}
+.text-diff>tbody>tr.code {
+	background: inherit;
+	border: inherit;
+	border-radius: inherit;
+	padding: inherit;
+	margin: inherit;
+	font-family: inherit;
+	font-size: inherit;
+}
+.text-diff>tbody>tr>td.content>span.content-mark {
+	background: #8950FC;
+	color: white !important;
+}
+.text-diff>tbody>tr>td.content>span.content-mark.insert {
+	background: #91c8ae;
+}
+.text-diff>tbody>tr>td.content>span.content-mark.delete {
+	background: #dc9ec9;
+}
+
+.text-diff>tbody>tr>td.number>.comment-indicator {
+	margin: 0 0.3rem;
+}
+
+.text-diff>tbody>tr>td.blame {
+	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	padding: 0 0.3rem;
+	border-left: 1px solid var(--secondary);
+}
+.text-diff>tbody>tr>td.blame.abbr {
+	text-overflow: inherit;
+}
+.text-diff>tbody>tr>td.blame .hash, .text-diff>tbody>tr>td.blame .date {
+	margin-right: 0.6rem;
+}
+.text-diff>tbody>tr>td.blame.abbr .hash {
+	margin-right: 0;
+}
+.text-diff>tbody>tr>td.blame .same-as-above {
+	margin-left: 90px;
+	margin-top: -0.6rem;
+	color: var(--gray);
+	font-size: 1.2rem;
+}
+.text-diff>tbody>tr>td.blame.abbr .same-as-above {
+	margin-left: 1rem;
+}

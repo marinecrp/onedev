@@ -1,0 +1,32 @@
+.floating.menu .content {
+	min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+}
+.floating.menu ul {
+	margin:0; 
+	padding: 0;
+}
+.floating.menu li:hover, .floating.menu li:focus {
+	background-color: var(--light);
+}
+.floating.menu li a {
+	padding: 0.75rem 1.25rem;	
+	color: var(--dark);
+}
+.floating.menu li a .icon-tick {
+	width: 13px;
+	height: 13px;
+}
+.floating.menu li a .shortcut {
+	font-weight: bold;
+	color: var(--gray);
+	width: 5rem;
+}
+
+.floating.menu li.dropdown-divider div {
+    height: 0;
+    margin: 0.5rem 0;
+    overflow: hidden;
+    border-top: 1px solid var(--light-gray);
+}

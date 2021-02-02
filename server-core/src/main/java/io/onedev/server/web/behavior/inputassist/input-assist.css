@@ -1,0 +1,21 @@
+.floating>.content>.input-assist {
+	padding: 1rem;
+}
+.input-assist .suggestions {
+	max-height: 400px;
+}
+.input-assist li.suggestion .content {
+	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+.input-assist .help {
+	border: 1px dashed var(--secondary);
+}
+.input-assist .help li {
+	list-style: disc;
+	margin-left: 1.5rem;
+}
+.input-error-mark {
+    background: url(wave.png) repeat-x bottom;
+	position: absolute;
+    z-index: 100000;
+}

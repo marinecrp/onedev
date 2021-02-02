@@ -1,0 +1,8 @@
+.floating.groovy-script.off-canvas td.name {
+	width: 120px !important;
+}
+@media(min-width: 768px) {
+.groovy-script.floating.off-canvas {
+    width: 600px;
+}
+}

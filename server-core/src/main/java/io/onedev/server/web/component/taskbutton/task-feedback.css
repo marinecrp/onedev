@@ -1,0 +1,10 @@
+.task-feedback .messages {
+	background: white;
+	border: none;
+	padding: 0;
+	max-height: 480px;
+}
+.task-feedback .alert {
+	margin-top: 1rem;
+	margin-bottom: 0;
+}

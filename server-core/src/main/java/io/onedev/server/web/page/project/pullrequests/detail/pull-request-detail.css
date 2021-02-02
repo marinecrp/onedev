@@ -1,0 +1,73 @@
+.pull-request-detail>.card-body {
+	min-height: fit-content;
+}
+.pull-request-detail>.card-body>.main>.summary {
+	border: 2px dashed var(--light-gray);
+	padding: 1.2rem 1.5rem;
+	border-radius: 0.42rem;
+}
+.pull-request-detail>.card-body>.main>.summary>div {
+	margin-bottom: 1rem;
+}
+.pull-request-detail>.card-body>.main>.summary>div:last-child {
+	margin-bottom: 0;
+}
+.pull-request-detail>.card-body>.main>.operations>a {
+	margin-bottom: 1.2rem;
+	margin-right: 0.5rem;
+}
+.pull-request-detail>.card-body>.main>.summary .icon {
+	width: 20px;
+	height: 20px;
+	margin-right: 6px;
+	flex-shrink: 0;
+}
+.pull-request-detail>.card-body>.main>.summary .icon.spin {
+	width: 24px;
+	height: 24px;
+	margin-left: -2px;
+	margin-right: 4px;
+}
+ul>li>a.code-comments.new .icon {
+	width: 0.9rem;
+	height: 0.9rem;
+	fill: var(--primary);
+	display: inline-block !important;
+}
+
+.conflict-resolve-instruction {
+	max-width: 480px;
+}
+.conflict-resolve-instruction ul {
+	padding-left: 0.9rem;
+	list-style: decimal;
+	margin-bottom: 0;
+}
+
+@media(min-width: 1200px) {
+	.pull-request-detail>.card-body>.main>.summary .more-info,
+	.pull-request-detail>.card-body>.main>.summary .more-info:hover,
+	.pull-request-detail>.card-body>.main>.summary .more-info:focus {
+		color: inherit !important;
+		cursor: inherit !important;
+	}
+}
+
+.pull-request-detail>.card-body>.more-info>.body>* {
+	margin-bottom: 1.5rem;
+	border-top: 1px dashed var(--secondary);
+	padding-top: 1.5rem;
+}
+.pull-request-detail>.card-body>.more-info>.body>:first-child {
+	border-top: none;
+	padding-top: 0;
+}
+
+.pull-request-detail>.card-body>.more-info>.body>*>.head {
+	font-weight: 600;
+	margin-bottom: 0.8rem;
+}
+.pull-request-detail .more-info .reviews a.delete, 
+.pull-request-detail .more-info .assignments a.delete {
+	margin-left: auto;
+}

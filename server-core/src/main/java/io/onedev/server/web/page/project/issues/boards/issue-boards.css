@@ -1,0 +1,72 @@
+.issue-boards>.body>.feedback>.feedbackPanel {
+	margin-bottom: 0;
+}
+.issue-boards>.body>.columns>.column {
+	flex: 1;
+}
+.issue-boards>.body>.feedback>.feedbackPanel {
+	margin-bottom: 0;
+	margin-top: 1rem;
+}
+.issue-boards>.body>.columns>.column>.content {
+	border: 1px solid var(--secondary);
+	border-radius: 0.42rem;
+	background: white;
+}
+.issue-boards>.body>.columns>.column>.content>.head {
+	font-weight: 600;
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	border-bottom: 1px solid var(--light-gray);
+	border-top: 3px solid var(--secondary);
+}
+.issue-boards>.body>.columns>.column {
+	margin-left: 2rem;
+	min-width: 300px;
+}
+.issue-boards>.body>.columns .column:first-child {
+	margin-left: 0;
+}
+.issue-boards>.body>.columns>.column>.content>.body.issue-droppable.ui-droppable-active {
+	background: #FDF2C5;
+} 
+.issue-boards>.body>.columns>.column>.content>.body.issue-droppable.ui-droppable-hover {
+	background: #FAE280;
+}
+.issue-boards>.body>.columns>.column {
+	margin-left: 2rem;
+	min-width: 256px;
+}
+.issue-boards>.head .milestone-selector.btn-danger {
+	background-color: var(--danger) !important;
+	border-color: var(--danger) !important;
+}
+.issue-boards>.head .milestone-selector.btn-danger:hover, 
+.issue-boards>.head .milestone-selector.btn-danger:focus {
+	background-color: #EE2D41 !important;
+    border-color: #EE2D41 !important;
+}
+.floating>.content>.milestone-menu>table>tbody>tr:first-child>td {
+	border-top: none;
+}
+
+.issue-boards>.body .board-card {
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.15);
+	position: relative;
+}
+.issue-boards>.body .board-card.issue-dragging {
+	visibility: hidden;
+}
+.issue-boards>.body .board-card.ui-draggable-dragging {
+	box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.3);	
+}
+
+.board-card-detail .modal-header h5 {
+	width: 100%;
+	margin-right: 36px;
+}
+
+.board-card-detail .issue-operations .new-issue {
+	display: none;
+}
+

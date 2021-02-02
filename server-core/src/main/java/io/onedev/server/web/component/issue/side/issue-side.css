@@ -1,0 +1,28 @@
+.issue-side>* {
+	margin-bottom: 1.5rem;
+	border-top: 1px dashed var(--secondary);
+	padding-top: 1.5rem;
+}
+.issue-side>div:first-child {
+	border-top: none;
+	padding-top: 0;
+}
+.issue-side>div>.head {
+	font-weight: 600;
+	margin-bottom: 0.8rem;
+}
+.issue-side>.fields>.body>table {
+	width: 100%;
+}
+.issue-side>.fields>.body>table>tbody>tr>td.name {
+	padding: 0 0.6rem 1.2rem 0;
+	vertical-align: top;
+	font-weight: 600;
+}
+.issue-side>.fields>.body>table>tbody>tr>td.values {
+	padding-bottom: 0.6rem;
+	vertical-align: top;
+}
+.issue-side>.fields>.body>table>tbody>tr:last-child>td {
+	padding-bottom: 0;
+}

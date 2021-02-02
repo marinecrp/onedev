@@ -1,0 +1,21 @@
+<wicket:extend>
+	<div class="card">
+		<div class="card-body">
+			<a wicket:id="addNew" class="btn btn-icon btn-primary mb-4" title="Add SSO Provider"><wicket:svg href="plus" class="icon"/></a>
+			<table wicket:id="connectors" class="table"></table>
+		</div>
+	</div>
+	<wicket:fragment wicket:id="showDetailFrag">
+		<a wicket:id="link"><wicket:svg href="ellipsis" class="icon align-middle"/></a>
+	</wicket:fragment>
+	<wicket:fragment wicket:id="connectorDetailFrag">
+		<div wicket:id="additionalInfo" class="mb-4"></div>
+		<div wicket:id="viewer"></div>
+	</wicket:fragment>
+	<wicket:fragment wicket:id="connectorActionsFrag">
+		<div class="d-flex">
+			<a wicket:id="edit" class="btn btn-light-primary mr-1">Edit</a>
+			<a wicket:id="delete" class="btn btn-light-danger ml-auto">Delete</a>
+		</div>
+	</wicket:fragment>
+</wicket:extend>

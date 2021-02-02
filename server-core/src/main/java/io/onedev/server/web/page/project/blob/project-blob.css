@@ -1,0 +1,61 @@
+.ProjectBlobPage .sidebar {
+	box-shadow: none;
+	border-right: 1px solid var(--light-gray);
+}
+.ProjectBlobPage .topbar {
+	box-shadow: none;
+	border-bottom: 1px solid var(--light-gray);
+}
+.project-blob {
+	background: white;
+}
+
+.project-blob>.head {
+	border-bottom: 1px solid var(--light-gray);
+	min-height: 40px;
+}
+
+.project-blob .revision-indexing+.build-support-note {
+	padding-top: 0 !important;
+}
+
+.project-blob>.blob-content {
+	overflow: auto;
+}
+.project-blob>.search-result {
+	height: 200px;
+	border-top: 1px solid var(--light-gray);
+	top: 0 !important;
+}
+.project-blob>.search-result>.ui-resizable-handle {
+	background: var(--light) url(/icon/grip2.svg) no-repeat scroll center center;
+	background-size: 20px 20px;
+    cursor: n-resize;
+    height: 4px;
+    top: 0;
+    position: relative;
+}
+
+.floating.get-code {
+	max-width: 480px !important;
+}
+.floating.get-code .download {
+	padding: 0 2.25rem 2rem 2.25rem; 
+}
+.floating.get-code .card {
+	box-shadow: none;
+}
+
+.markdown-rendered a+.missing, img+.missing {
+	background: var(--light-danger);
+	margin-left: 4px;
+	padding: 0 2px;
+}
+.markdown-rendered img+.missing {
+	vertical-align: middle;
+}
+
+.markdown-rendered .missing+.add-missing {
+	color: var(--success);
+	margin-left: 4px;
+}

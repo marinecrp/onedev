@@ -1,0 +1,10 @@
+.build-detail>.card-header>.card-title>.status>svg {
+	width: 20px;
+	height: 20px;
+}
+.build-detail .issue-list .add-new {
+	display: none;
+}
+.build-detail>.card-body>.main>.error-message {
+	max-height: 100px;
+}
