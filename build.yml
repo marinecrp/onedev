@@ -34,12 +34,3 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
-addons:
-  sonarcloud:
-    organization: "marinecrp"
-    token:
-      secure: "wBqzZbCPi+Td+YhQlIP9BXUyfn0VFsec+/45+zg68skX0bVnUlpw9iO1Gdgd+z1ZNAksKEWgfSEC3YBga9p7CMjdTs7zSNcFEhYioNYkmUnKz1pQOoGKQUkz4dbFVgVUGe4379Qz7pq/LelGad4EMuCnouBn4HWbvpvNrXLiKMSOmnr+vZYp0BHbrwpoQSsw1yr68B1ngv96Hm+RyqO4wEVqt202CTd8S4BfcP06x/pig1LY27FurLPnElqOrexuM0vSpOpV+jAJm/cUF+qxmVOiOVwUUgyghRxFk/esCFveqTDGo795LT3t4rFZxI+KmjmOe0UTbW5TA52aIbVDEA6xK38t30KI+HwP/LZYW3hfz26JGz7QCCid75FpdQuNVEiLsrug2MUa4UwCIbOmlRm2wh9QHc196Ge0+kPzOyLiiVXkzbEOn6JhgLxGYc1dtyvcDmGD9ONXuD3/x59wWSE8Lq38UnumAhnLipRIFKhp0Mt9L4D4e4zRL/QJbECiiewYP2gy+jaS1AETRUk93pJCmh+fnppoZFqxfYJ+dvBZJAN15i5yyo5M3uX5Ml2v4TsVxAOFwJifDU19i1zUyZuHbX5N3FnLKas55KoUDcr3C+Y50AB3h5oUz62vIFQYzY2uaDnCnbibQDvyJRXSJKUaRyOLwQV7lLb8Hb2gWbQ="
-
-script:
-  # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
-  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=marinecrp_onedev
