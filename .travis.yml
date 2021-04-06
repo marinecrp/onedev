@@ -14,4 +14,4 @@ addons:
 
 script:
   # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
-  - mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -DskipTests
+  - mvn verify sonar:sonar
